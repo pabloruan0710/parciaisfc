@@ -1,0 +1,206 @@
+/* Cartrolando FC - http://cartrolandofc.com
+ * https://github.com/wgenial/cartrolandofc
+ * Desenvolvido por WGenial - http://wgenial.com.br
+ * License: MIT <http://opensource.org/licenses/mit-license.php> - see LICENSE file
+ */
+
+/* default */
+body {
+  font-family: 'Lato', serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+*:focus {
+  border-color: #CCC !important;
+  box-shadow: initial !important;
+  outline: 0 !important;
+}
+
+/* misc */
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.alert {
+  font-size: 1.1em !important;
+}
+
+/* jumbotron */
+.jumbotron {
+  text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 20px !important;
+  background: #F5F5F5;
+  box-shadow: 0 1px 0 #ccc;
+  border: 1px solid #eee;
+}
+.jumbotron h1 {
+  font-size: 3em !important;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.jumbotron p {
+  font-size: 1.2em !important;
+}
+.jumbotron p.lead {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  box-shadow: 0px 1px 0px #FFF;
+}
+.jumbotron .btn {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.jumbotron a {
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* footer */
+.footer {
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 30px;;
+}
+.footer p {
+  margin: 0;
+}
+
+
+#result {
+  display: none;
+}
+
+/* Social buttons */
+.social {
+  text-align: center;
+}
+.social div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 8px;
+}
+.facebook iframe {
+  transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  transform-origin: center;
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center;
+}
+
+/* Navigation */
+.nav-pills {
+  display: inline-block;
+}
+.nav-pills>li+li:before {
+  content: "";
+  display: block;
+  position: relative;
+  float: left;
+  width: 2px;
+  margin: 0 0.8em;
+  background: #ccc;
+  border-right: 1px solid #fff;
+  height: 1em;
+}
+.nav-pills>li>a {
+  letter-spacing: -0.03em;
+}
+.nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover {
+  padding: 0;
+  float: left;
+  background: none;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #333;
+  background: none;
+}
+
+/* Rodada atual */
+.rodada-atual {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 0;
+  background: #EFEFEF;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  line-height: 1.5em;
+}
+
+/* Developer */
+.by-wgenial {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: right;
+}
+.by-wgenial a {
+  color: #999;
+  font-size: 10px !important;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none !important;
+}
+.by-wgenial a:hover {
+  color: #666;
+}
+
+/* Loading */
+#loading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Status Rodada e Mercado */
+#status_rodada_mercado {
+  padding: 20px 0;
+  min-height: 78px;
+}
+
+/* Rodada Atual */
+#rodada_atual {
+  display: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 0 0 4px 0;
+}
+
+/* Mercado Status */
+#mercado_status {
+  display: none;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+#mercado_status.aberto {
+  color: #3FA540;
+}
+#mercado_status.fechado {
+  color: #F87600;
+}
+#mercado_status.encerrado {
+  color: #607d8b;
+}
+
+/* Adv */
+.adv {
+  display: inline-block;
+  margin: 6px 0;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.adv .boo-widget.custom {
+  margin: 0 auto !important;
+}

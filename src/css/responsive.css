@@ -1,0 +1,144 @@
+/* Cartrolando FC - http://cartrolandofc.com
+ * https://github.com/wgenial/cartrolandofc
+ * Desenvolvido por WGenial - http://wgenial.com.br
+ * License: MIT <http://opensource.org/licenses/mit-license.php> - see LICENSE file
+ */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 28px !important;
+  }
+  .jumbotron a {
+    text-transform: none;
+  }
+  .nav-pills>li+li:before {
+    margin: 0 0.4em;
+    height: 1.2em;
+  }
+  input.team {
+    padding: 20px !important;
+    font-size: 20px !important;
+  }
+
+  #teams_list li {
+    padding: 10px;
+  }
+  #teams_list .nome {
+    font-size: 1.1em;
+    padding-left: 16px;
+  }
+  #teams_list .cartola {
+    font-size: 1em;
+    float: left;
+    text-align: left;
+    clear: left;
+    display: inline;
+    margin-left: 48px;
+    margin-top: -12px;
+  }
+  #team_escudo, .team_nome {
+    width: 100%;
+    float: initial;
+    text-align: center;
+  }
+  #team_escudo img {
+    margin: 0 auto;
+    display: block;
+  }
+  #team_info {
+    margin-bottom: 0;
+  }
+  #team_info .team_nome h1 {
+    font-size: 1.9em;
+  }
+  #team_info .team_patrimonio {
+    clear: none;
+    text-align: center;
+  }
+
+
+  #team_rodada_pontuacao {
+    width: 100%;
+    margin: 20px 0 0 0;
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  #team_rodada_pontuacao .team_rodada {
+    text-align: center;
+  }
+  #team_rodada_pontuacao .team_pontuacao {
+    overflow: hidden;
+    text-align: center;
+  }
+  #team_rodada_pontuacao .team_pontuacao .pontos_total {
+    float: none;
+  }
+  .athlete_wrapper {
+    min-height: 100px;
+  }
+  .athlete_clube {
+    width: 24px;
+    position: absolute;
+    margin-top: 4px;
+    left: 84px;
+  }
+  .athlete_foto {
+    left: -10px;
+  }
+  .athlete_foto img {
+    height: 90px;
+  }
+  .athlete_apelido_label {
+    left: 118px;
+    margin-top: 4px;
+    position: absolute;
+    font-size: 1.2em!important;
+    letter-spacing: -0.04em;
+    font-weight: 900;
+    font-size: 1.429em;
+    display: block;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  .athlete_posicao_label {
+    left: 118px;
+    position: absolute;
+    color: #666;
+    display: block;
+    font-size: 0.857em;
+    line-height: 0.857em;
+    text-transform: uppercase;
+    top: 30px;
+  }
+  .statistics_wrapper {
+    bottom: 4px;
+  }
+  .athlete_val {
+    font-size: .95em;
+    margin: 0 6px 2px 6px;
+    line-height: normal;
+    letter-spacing: -0.03em;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+  }
+  .athlete_label {
+    line-height: normal;
+    letter-spacing: -0.03em;
+    font-size: .7em;
+    margin: 0 4px 0 4px;
+    color: #666;
+    display: block;
+    text-transform: uppercase;
+    line-height: 0.8em;
+    text-align: center;
+  }
+}
