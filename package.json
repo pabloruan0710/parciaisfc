@@ -1,7 +1,7 @@
 {
   "name": "cartrolandofc.com",
   "version": "1.0.0",
-  "description": "Cartrolando FC é um site para consultar os pontos parciais do seu time no CartolaFC",
+  "description": "Parciais FC é um site para consultar os pontos parciais do seu time no CartolaFC",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/pabloruan0710/parciaisfc.git"
