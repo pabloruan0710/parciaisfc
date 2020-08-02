@@ -356,11 +356,12 @@ function dropdownTeams(teams, teams_total) {
   for (var i = 0; i < teams_list.length; i++) {
 
     var team_slug = teams_list[i].slug,
+      time_id = teams_list[i].time_id,
       team_nome = teams_list[i].nome,
       team_cartoleiro = teams_list[i].nome_cartola;
 
     wrapper += " \
-	  <li data-inc='" + i + "' data-slug='" + team_slug + "' data-nome='" + team_nome + "'> \
+	  <li data-inc='" + i + "' data-slug='" + team_slug + "' data-timeid='" + time_id +"' data-nome='" + team_nome + "'> \
       <div class='nome'>" + team_nome + "</div> \
       <div class='cartola'>" + team_cartoleiro + "</div> \
 	  </li>";
@@ -418,14 +419,14 @@ function teamInfo(team) {
       atletas_pontuados = result.atletas;
 
       // Lista atletas via [slug do time]
-      getAthletes(team.slug);
+      getAthletes(team.time_id);
 
     });
 
   } else {
 
     // Lista atletas via [slug do time]
-    getAthletes(team.slug);
+    getAthletes(team.time_id);
 
   }
 
@@ -433,7 +434,7 @@ function teamInfo(team) {
 
 
 // Lista atletas do time
-function getAthletes(team_slug) {
+function getAthletes(time_id) {
 
   var $team_input = $("#team-name"),
 
@@ -452,7 +453,7 @@ function getAthletes(team_slug) {
     url: "load-api.php",
     data: {
       api: "busca-atletas",
-      team_slug: team_slug
+      team_id: time_id
     },
     beforeSend: function() {
 
